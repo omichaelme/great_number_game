@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>The Great Number Game!</title>
+        <link rel='stylesheet' type='text/css' href='/static/css/my_style_sheet.css'>
+        <script type='text/javascript' src='/static/js/my_script.js'></script>
+    </head>
+    <body>
+        <div id="main_content">
+            <h1>Welcome to the Great Number Game!</h1><br>
+
+            <h3>I am thinking of a number between 1 and 100.<br><br>Take a guess!</h3><br>
+            
+            {% if TooLow == True %}
+                <div id='box-1'>Too Low!</div><br><br>
+            {% endif %}
+
+            {% if TooHigh == True %}
+                <div id='box-1'>Too High!</div><br><br>
+            {% endif %}
+
+            {% if GoodNum == True %}
+                <div id='box-2'>Correct! [ <b id="GoodNum"> {{ session['randNum'] }} </b> ] was the number!</div><br><br>
+            {% endif %}
+            
+            <form action='/user' method='post' name='myForm'>
+                Input value <input type='number' name='inputNum' min='0' max='100' required><br><br>
+                <input type='submit' value='Submit' class='button-1'><br><br><br><br>
+            </form>
+
+            <a href="/restart" id='button-2'>Restart Game</a>
+
+        </div>
+    </body>
+</html>
