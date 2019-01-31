@@ -1,0 +1,49 @@
+h2 {
+    color: red;
+}
+#main_content {
+    background: lightblue;
+    border: solid black;
+    width: 500px;
+    height:600px;
+    padding: 20px;
+    margin: 30px;
+    box-align: center;
+    vertical-align: center;
+}
+#box-1 {
+    width: 70px;
+    height: 30px;
+    background: red;
+    border: solid lightblue;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    vertical-align: middle;
+}
+#box-2 {
+    width: 120px;
+    height: 30px;
+    background: green;
+    border: solid lightblue;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    vertical-align: middle;
+}
+#button-1 {
+    background: blue;
+    color: blue;
+    vertical-align: middle;
+    padding: 5px;
+}
+#button-2 {
+    background: green;
+    color: white;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 5px;
+}
+#GoodNum {
+    font-size: 24px;
+}
